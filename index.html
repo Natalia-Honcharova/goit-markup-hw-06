@@ -37,8 +37,78 @@ rel="stylesheet"
           <li class="contacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+
+       <button
+  type="button"
+  class="menu-toggle"
+  aria-label="Open menu">
+  <svg width="24" height="24">
+    <use href="./images/icons.svg#icon-menu"></use>
+  </svg>
+</button>
+
       </div>
     </header>
+
+<div class="mobile-menu">
+  <div class="mobile-menu-container">
+
+    <button type="button" class="mobile-menu-close">
+      <svg width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="./index.html" class="current">Studio</a>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-contacts">
+      <a href="tel:+110001111111" class="mobile-phone">
+        +11 (000) 111-11-11
+      </a>
+      <a href="mailto:info@devstudio.com" class="mobile-email">
+        info@devstudio.com
+      </a>
+    </div>
+
+    <ul class="mobile-socials">
+      <li>
+        <a href="" class="social-link">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="" class="social-link">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="" class="social-link">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="" class="social-link">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>
 
     <main>
       <section class="hero">
@@ -117,9 +187,8 @@ rel="stylesheet"
 
             <img class="team-photo"
               src="./images/img-3.png"
+               srcset="./images/img-3.png 1x, ./images/img-3@2x.png 2x"
               alt="Mark Guerrero"
-              width="264"
-              height="260"
               />
 
             <div class="team-content">
@@ -160,9 +229,8 @@ rel="stylesheet"
           <li class="team-item">
             <img class="team-photo"
               src="./images/img-2.png"
+               srcset="./images/img-2.png 1x, ./images/img-2@2x.png 2x"
               alt="Tom Ford"
-              width="264"
-              height="260"
             />
             <div class="team-content">
             <h3 class="team-name">Tom Ford</h3>
@@ -203,9 +271,8 @@ rel="stylesheet"
   <li class="team-item">
   <img class="team-photo"
     src="./images/img-1.png"
+     srcset="./images/img-1.png 1x, ./images/img-1@2x.png 2x"
     alt="Camila Garcia"
-     width="264"
-     height="260"
             />
             <div class="team-content">
             <h3 class="team-name">Camila Garcia</h3>
@@ -245,9 +312,8 @@ rel="stylesheet"
           <li class="team-item">
             <img class="team-photo"
               src="./images/img.png"
+               srcset="./images/img.png 1x, ./images/img@2x.png 2x"
               alt="Daniel Wilson"
-              width="264"
-              height="260"
             />
             <div class="team-content">
             <h3 class="team-name">Daniel Wilson</h3>
@@ -297,9 +363,8 @@ rel="stylesheet"
             <div class="portfolio-thumb">
             <img class="portfolio-img"
               src="./images/img-4.png"
+               srcset="./images/img-4.png 1x, ./images/img-4@2x.png 2x"
               alt="Banking App"
-              width="360"
-              height="300"
             />
             <p class="portfolio-overlay">Marketing application interface design.
           </p>
@@ -313,9 +378,8 @@ rel="stylesheet"
             <div class="portfolio-thumb">
             <img class="portfolio-img"
               src="./images/img-5.png"
+              srcset="./images/img-5.png 1x, ./images/img-5@2x.png 2x"
               alt="Cashless Payment"
-              width="360"
-              height="300"
             />
              <p class="portfolio-overlay">Marketing application interface design.
           </p>
@@ -329,9 +393,8 @@ rel="stylesheet"
             <div class="portfolio-thumb">
             <img class="portfolio-img"
               src="./images/img-6.png"
+              srcset="./images/img-6.png 1x, ./images/img-6@2x.png 2x"
               alt="Meditation App"
-              width="360"
-              height="300"
             />
              <p class="portfolio-overlay">Marketing application interface design.
           </p>
@@ -345,9 +408,8 @@ rel="stylesheet"
             <div class="portfolio-thumb">
             <img class="portfolio-img"
               src="./images/img-7.png"
+               srcset="./images/img-7.png 1x, ./images/img-7@2x.png 2x"
               alt="Taxi Service"
-              width="360"
-              height="300"
             />
              <p class="portfolio-overlay">Marketing application interface design.
           </p>
@@ -361,9 +423,8 @@ rel="stylesheet"
             <div class="portfolio-thumb">
             <img class="portfolio-img"
               src="./images/img-8.png"
+               srcset="./images/img-8.png 1x, ./images/img-8@2x.png 2x"
               alt="Screen Illustrations"
-              width="360"
-              height="300"
             />
              <p class="portfolio-overlay">Marketing application interface design.
           </p>
@@ -377,9 +438,8 @@ rel="stylesheet"
             <div class="portfolio-thumb">
             <img class="portfolio-img"
               src="./images/img-9.png"
+               srcset="./images/img-9.png 1x, ./images/img-9@2x.png 2x"
               alt="Online Courses"
-              width="360"
-              height="300"
             />
              <p class="portfolio-overlay">Marketing application interface design.
           </p>
@@ -396,7 +456,10 @@ rel="stylesheet"
 
     <footer class="page-footer">
       <div class="container">
-        <div class="footer-info">
+
+        <div class="footer-top">
+
+      <div class="footer-info">
       <a class="logo footer-logo" href="./index.html">
           Web<span class="logo-part">Studio</span></a>
       <p class="footer-text">
@@ -438,6 +501,7 @@ rel="stylesheet"
       </li> 
       </ul>
       </div>
+        </div>
 
 <div class="footer-subscribe">
 <p class="footer-subscribe-title">Subscribe</p>
@@ -541,8 +605,10 @@ rel="stylesheet"
         <use href="./images/icons.svg#icon-check"></use>
       </svg>
       </span>
+      <span class="modal-checkbox-text">
       I accept the terms and conditions of the
-      <a href="./index.html" class="modal-checkbox-link">Privacy Policy</a>
+      <a href="./index.html" class="modal-checkbox-link"> Privacy Policy</a>
+    </span>
     </label>
   </div>
 
@@ -555,3 +621,4 @@ rel="stylesheet"
     </div>
   </body>
 </html>
+
