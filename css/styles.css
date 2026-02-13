@@ -201,6 +201,7 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
 
     color: #2e2f42;
 }
@@ -232,12 +233,13 @@ img {
 }
 
 .mobile-email {
+    font-weight: 500;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
     color: #434455;
 }
 .mobile-socials {
-    margin-top: 48px;
+    margin-top: 0;
     display: flex;
     gap: 40px;
 }
@@ -542,6 +544,10 @@ fill: #f4f4fd;
     background-color: #fff;
     box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+            0 1px 6px rgba(46, 47, 66, 0.08),
+            0 1px 1px rgba(46, 47, 66, 0.16),
+            0 2px 1px rgba(46, 47, 66, 0.08);
     width: 100%;
 }
 
@@ -1048,6 +1054,7 @@ display: inline;
         margin: 0 auto;
     }
         .hero {
+            padding: 112px 0;
             background-image:
                 linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
                 url("../images/people-office1.png");
@@ -1117,10 +1124,12 @@ display: inline;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 64px 24px;
     }
     
     .team-item {
+        width: 264px;
         flex-basis: calc((100% - 24px) / 2);
     }
     
@@ -1250,6 +1259,13 @@ display: inline;
         padding: 0 15px;
         margin: 0 auto;
     }
+    .hero {
+        padding: 188px 0;
+    }
+    
+    .hero-title {
+        margin-bottom: 48px;
+    }
 
     .header-container {
         height: 72px;
@@ -1302,15 +1318,12 @@ display: inline;
                      width: calc((100% - 72px) / 4);
                  }
         .portfolio-item {
-            box-shadow: none;
             width: calc((100% - 48px) / 3);
         }
-        .portfolio-item:hover {
-            box-shadow:
-                    0 1px 6px rgba(46, 47, 66, 0.08),
-                    0 1px 1px rgba(46, 47, 66, 0.16),
-                    0 2px 1px rgba(46, 47, 66, 0.08);
-        }
+    .page-footer {
+        padding: 100px 0;
+    }
+        
     .page-footer .container {
         flex-direction: row;
         align-items: flex-start;
@@ -1338,6 +1351,11 @@ display: inline;
    .footer-top {
        display: flex;
        align-items: flex-start;
+   }
+   .features,
+   .team,
+   .portfolio {
+       padding: 120px 0;
    }
   
 }
