@@ -65,7 +65,8 @@ img {
 }
 .header-logo {
     padding: 0;
-    margin-right: 0;
+    padding: 24px 0;
+    margin-right: 120px;
 }
 .header-logo .logo-part {
     color: #2e2f42;
@@ -157,7 +158,6 @@ img {
 .mobile-menu-container {
     position: relative;
     padding: 24px 24px 40px;
-    margin-top: auto;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -213,9 +213,8 @@ img {
 }
 
 .mobile-contacts {
-    margin-top: 168px;
+    margin-top: auto;
     margin-bottom: 48px;
-
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -225,7 +224,7 @@ img {
     display: block;
     margin-bottom: 16px;
 
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 
@@ -1110,6 +1109,9 @@ display: inline;
     .features-item {
         width: calc((100% - 24px) / 2);
     }
+    .features-subtitle {
+        text-align: left;
+    }
     
     .team-list {
         display: flex;
@@ -1252,6 +1254,9 @@ display: inline;
     .header-container {
         height: 72px;
     }
+    .header-logo {
+        margin-right: 76px;
+    }
         .contacts-list {
             flex-direction: row;
             align-items: center;
@@ -1280,9 +1285,11 @@ display: inline;
  .features-icon {
      display: flex;
  }
- .features-subtitle {
-     font-size: 36px;
- }
+  .features-subtitle {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+  }
     
          .features-text {
              font-weight: 400;
