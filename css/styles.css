@@ -157,7 +157,7 @@ img {
 .mobile-menu-container {
     position: relative;
     padding: 24px 24px 40px;
-
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -298,8 +298,9 @@ img {
   }
 
  .hero {
-     max-width: 100%;
-     padding: 112px 0;
+     max-width: 1440px;
+     padding: 72px 0;
+     margin: 0 auto;
      background-color: #2e2f42;
      background-image:
          linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -353,7 +354,7 @@ text-shadow:
 }
 
 .features {
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .visually-hidden {
     position: absolute;
@@ -407,8 +408,9 @@ text-shadow:
 
 .features-subtitle {
     margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
@@ -539,10 +541,7 @@ fill: #f4f4fd;
 
 .portfolio-item {
     background-color: #fff;
-    box-shadow:
-        0 1px 6px rgba(46, 47, 66, 0.08),
-        0 1px 1px rgba(46, 47, 66, 0.16),
-        0 2px 1px rgba(46, 47, 66, 0.08);
+    box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
 }
@@ -1116,7 +1115,7 @@ display: inline;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 64px 24px;
     }
     
     .team-item {
@@ -1151,9 +1150,8 @@ display: inline;
          .footer-top {
              display: flex;
              flex-direction: row;
-             text-align: left;
              align-items: flex-start;
-             gap: 24px;
+             gap: 72px;
          }
     
          .footer-info {
@@ -1282,6 +1280,9 @@ display: inline;
  .features-icon {
      display: flex;
  }
+ .features-subtitle {
+     font-size: 36px;
+ }
     
          .features-text {
              font-weight: 400;
@@ -1294,7 +1295,14 @@ display: inline;
                      width: calc((100% - 72px) / 4);
                  }
         .portfolio-item {
+            box-shadow: none;
             width: calc((100% - 48px) / 3);
+        }
+        .portfolio-item:hover {
+            box-shadow:
+                    0 1px 6px rgba(46, 47, 66, 0.08),
+                    0 1px 1px rgba(46, 47, 66, 0.16),
+                    0 2px 1px rgba(46, 47, 66, 0.08);
         }
     .page-footer .container {
         flex-direction: row;
@@ -1313,7 +1321,7 @@ display: inline;
         gap: 120px;
     }
     .footer-subscribe {
-        margin-top: 0;
+        margin-left: auto;
     }
     .footer-subscribe-form {
         display: flex;
@@ -1325,6 +1333,11 @@ display: inline;
        align-items: flex-start;
    }
   
+}
+@media (min-width: 768px) and (max-width: 1157px) {
+    .page-footer .container {
+        max-width: 584px;
+    }
 }
 
 @media (min-resolution: 192dpi) {
