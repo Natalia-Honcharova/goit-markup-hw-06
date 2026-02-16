@@ -65,7 +65,7 @@ img {
 }
 .header-logo {
     padding: 0;
-    padding: 24px 0;
+    padding: 16px 0;
     margin-right: 120px;
 }
 .header-logo .logo-part {
@@ -1072,6 +1072,7 @@ display: inline;
  }
 
  .header-logo {
+     padding: 24px 0;
      margin-right: 120px;
  }
 
